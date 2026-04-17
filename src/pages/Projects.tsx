@@ -4,7 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import CommunitySection from "@/components/CommunitySection";
 import Marquee, { type MarqueeItemData } from "@/components/Marquee";
 import ProjectCard from "@/components/ProjectCard";
-import { SmileySticker, Hammer, RocketLaunch, FastForward, CassetteTape, Coffee } from "@phosphor-icons/react";
+import { SuitcaseSimple, Hammer, RocketLaunch, FastForward, CassetteTape, Coffee } from "@phosphor-icons/react";
 import { projects } from "@/data/projects";
 
 const marqueeItems: MarqueeItemData[] = [
@@ -28,7 +28,7 @@ const Projects = () => {
       <main className="max-w-[1300px] mx-auto px-3 md:px-6 pt-10 pb-20">
         <ScrollReveal variant="fade-up" className="flex flex-col items-center text-center mb-12">
           <div className="flex items-center gap-2 mb-4">
-            <SmileySticker size={24} weight="fill" className="text-primary" />
+            <SuitcaseSimple size={24} weight="fill" className="text-primary" />
             <span className="font-satoshi text-sm text-muted-foreground">Check Out Our Stuffffffss, Please</span>
           </div>
           <h1 className="font-satoshi font-bold text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-tight">
