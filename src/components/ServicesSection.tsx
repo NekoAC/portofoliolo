@@ -117,8 +117,16 @@ const ServicesSection = () => {
               <p className="font-satoshi font-normal text-[16px] leading-[22px] text-foreground/70 self-stretch flex-1">
                 {service.description}
               </p>
-              <Link to="/contact" className={`${service.colorClass} font-satoshi font-bold text-[16px] leading-[22px] text-center px-5 py-3.5 rounded-[10px] mt-auto`}>
-                {service.cta}
+              <Link to="/contact" className="mt-auto">
+                <AnimatedButton
+                  variant={service.colorClass.includes("accent") ? "accent" : service.colorClass.includes("secondary") ? "secondary" : "primary"}
+                  magnetic
+                  shine
+                  fillSweep
+                  className="px-5 py-3.5 text-[16px] rounded-[10px]"
+                >
+                  {service.cta}
+                </AnimatedButton>
               </Link>
             </div>
           ))}
