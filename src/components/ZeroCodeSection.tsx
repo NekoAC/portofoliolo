@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Lightning, Globe, ShieldCheck, Code } from "@phosphor-icons/react";
+import { useNavigate } from "react-router-dom";
 import AnimatedButton from "@/components/AnimatedButton";
 import cardIllustration1 from "@/assets/card-illustration-1.png";
 import cardIllustration2 from "@/assets/card-illustration-2.png";
