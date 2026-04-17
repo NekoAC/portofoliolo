@@ -7,7 +7,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import AnimatedButton from "@/components/AnimatedButton";
 import { Hammer, RocketLaunch, SmileySticker, FastForward, CassetteTape, Coffee, CaretLeft, CaretRight, ArrowRight } from "@phosphor-icons/react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import aboutHero from "@/assets/about-hero.jpg";
+import aboutHero from "@/assets/about-hero-new.png";
 import chessPiece from "@/assets/chesspiece.svg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
