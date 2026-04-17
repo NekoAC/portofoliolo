@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import type { Project } from "@/data/projects";
+import type { ProjectData } from "@/data/projects";
 
 interface ProjectCardProps {
-  project: Project;
+  project: ProjectData;
   /** Optional className applied to the root <Link> for layout/sizing overrides (width, height, snap, etc.). */
   className?: string;
   /** Optional class for the image container so callers can adjust height per layout. */
