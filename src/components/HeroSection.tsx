@@ -88,15 +88,13 @@ const HeroSection = () => {
             into work that's ready for the real world.
           </p>
 
-          <div ref={ctaRef} className="flex flex-wrap items-start gap-3 mt-2">
-            <div className="flex items-stretch">
-              <AnimatedButton variant="primary" magnetic={false} onClick={() => navigate("/contact")} className="h-[50px] md:h-[65px] text-sm md:text-[20px] leading-[27px] !rounded-r-none">
-                Start A Project With Me
-              </AnimatedButton>
-              <AnimatedButton variant="primary" iconOnly magnetic={false} onClick={() => navigate("/contact")} className="w-[50px] h-[50px] md:w-[64px] md:h-[65px] !rounded-l-none border-l border-primary-foreground/20">
-                <Hammer size={24} weight="fill" className="md:w-8 md:h-8" />
-              </AnimatedButton>
-            </div>
+          <div ref={ctaRef} className="flex flex-wrap items-stretch gap-1 mt-2">
+            <AnimatedButton variant="primary" onClick={() => navigate("/contact")} className="h-[50px] md:h-[65px] text-sm md:text-[20px] leading-[27px]">
+              Start A Project With Me
+            </AnimatedButton>
+            <AnimatedButton variant="primary" iconOnly onClick={() => navigate("/contact")} className="w-[50px] h-[50px] md:w-[64px] md:h-[65px]">
+              <Hammer size={24} weight="fill" className="md:w-8 md:h-8" />
+            </AnimatedButton>
             <AnimatedButton variant="accent" onClick={() => navigate("/contact")} className="h-[50px] md:h-[65px] text-sm md:text-[20px] leading-[27px]">
               View My Work
             </AnimatedButton>
