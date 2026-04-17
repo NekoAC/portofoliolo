@@ -358,33 +358,6 @@ const LanyardCard = ({ onComplete }: LanyardCardProps) => {
             </div>
         </div>
 
-        {/* Speech bubble */}
-        {showBubble && (
-          <div
-            className="absolute top-8 sm:top-12 -right-[180px] sm:-right-[220px] w-[170px] sm:w-[200px] animate-fade-in"
-            style={{ zIndex: 3 }}
-          >
-            <div
-              className="relative rounded-xl px-3 py-2.5 sm:px-4 sm:py-3 text-xs sm:text-sm font-satoshi leading-snug"
-              style={{
-                background: "hsl(0 0% 20%)",
-                color: "hsl(0 0% 90%)",
-                boxShadow: "0 8px 30px rgba(0,0,0,0.4)",
-              }}
-            >
-              Hey, this is Gamer Gekko Version of me if I became part of the team.
-              {/* Tail pointing left */}
-              <div
-                className="absolute top-4 -left-2 w-0 h-0"
-                style={{
-                  borderTop: "6px solid transparent",
-                  borderBottom: "6px solid transparent",
-                  borderRight: "8px solid hsl(0 0% 20%)",
-                }}
-              />
-            </div>
-          </div>
-        )}
         </div>
       </div>
 
