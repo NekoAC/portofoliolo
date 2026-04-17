@@ -48,13 +48,13 @@ const HowWeHelp = () => {
         <div className="relative">
           <div
             ref={trackRef}
-            className="flex items-stretch gap-4 md:gap-5 overflow-x-auto pb-2 snap-x snap-mandatory scrollbar-hide"
+            className="flex items-stretch gap-4 md:gap-5 overflow-x-auto md:overflow-x-visible pb-2 snap-x snap-mandatory scrollbar-hide"
           >
             {projects.map((project) => (
               <ProjectCard
                 key={project.slug}
                 project={project}
-                className="w-[220px] min-w-[220px] md:w-auto md:min-w-[340px] lg:min-w-[420px] lg:max-w-[420px] flex-shrink-0 snap-start"
+                className="w-[220px] min-w-[220px] md:w-auto md:min-w-0 md:flex-1 md:basis-0 flex-shrink-0 snap-start"
                 imageClassName="aspect-[4/5] md:aspect-[411/500]"
               />
             ))}
