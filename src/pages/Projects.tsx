@@ -28,7 +28,7 @@ const Projects = () => {
       <main className="max-w-[1300px] mx-auto px-3 md:px-6 pt-10 pb-20">
         <ScrollReveal variant="fade-up" className="flex flex-col items-center text-center mb-12">
           <div className="flex items-center gap-2 mb-4">
-            <SuitcaseSimple size={24} weight="fill" className="text-accent-pink" />
+            <SuitcaseSimple size={24} weight="fill" className="text-primary" />
             <span className="font-satoshi text-sm text-muted-foreground">Check Out Our Stuffffffss, Please</span>
           </div>
           <h1 className="font-satoshi font-bold text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-tight">
