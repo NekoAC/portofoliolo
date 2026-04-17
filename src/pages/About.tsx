@@ -327,8 +327,7 @@ const About = () => {
                     { logo: notionLogo, name: "Notion", desc: "Project management" },
                     { logo: figmaLogo, name: "Figma", desc: "UI/UX design" },
                     { logo: affinityLogo, name: "Affinity", desc: "Design suite" },
-                    { logo: jitterLogo, name: "Jitter", desc: "Motion design" },
-                    { logo: canvaLogo, name: "Canva", desc: "Slides & Quick Design" },
+                    { logo: jitterLogo, name: "Canva", desc: "Slides & Quick Design" },
                     { logo: lovableLogo, name: "Lovable", desc: "AI development" },
                   ];
                   const positions: React.CSSProperties[] = [
@@ -338,10 +337,9 @@ const About = () => {
                     { bottom: "22%", left: "16%" },
                     { bottom: "18%", right: "30%" },
                     { bottom: "24%", right: "12%" },
-                    { bottom: "10%", left: "42%" },
                     { top: "22%", right: "32%" },
                   ];
-                  const delays = [0, 0.15, 0.3, 0.1, 0.25, 0.4, 0.35, 0.2];
+                  const delays = [0, 0.15, 0.3, 0.1, 0.25, 0.4, 0.2];
                   return toolCards.map((tool, i) => (
                     <div
                       key={tool.name}
@@ -357,7 +355,7 @@ const About = () => {
 
               {/* Mobile-only logo grid */}
               <div className="md:hidden grid grid-cols-4 gap-4 mb-8 w-full">
-                {[webflowLogo, framerLogo, notionLogo, figmaLogo, affinityLogo, jitterLogo, canvaLogo, lovableLogo].map((logo, i) => (
+                {[webflowLogo, framerLogo, notionLogo, figmaLogo, affinityLogo, jitterLogo, lovableLogo].map((logo, i) => (
                   <div key={i} className="flex items-center justify-center">
                     <img src={logo} alt="" className="h-7 w-auto brightness-0 invert opacity-70" />
                   </div>
