@@ -88,7 +88,7 @@ const HeroSection = () => {
             into work that's ready for the real world.
           </p>
 
-          <div ref={ctaRef} className="flex flex-wrap items-stretch gap-1 mt-2">
+          <div ref={ctaRef} className="flex flex-wrap items-stretch mt-2 gap-0">
             <AnimatedButton variant="primary" onClick={() => navigate("/contact")} className="h-[50px] md:h-[65px] text-sm md:text-[20px] leading-[27px]">
               Start A Project With Me
             </AnimatedButton>
