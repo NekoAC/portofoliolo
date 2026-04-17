@@ -79,7 +79,7 @@ const CommunitySection = () => {
   }, []);
 
   return (
-    <section className="flex flex-col md:flex-row items-center p-6 md:p-8 lg:p-[50px] gap-8 md:gap-10 rounded-[20px] bg-[#222222] md:min-h-screen overflow-hidden">
+    <section className="flex flex-col md:flex-row items-center justify-center p-6 md:p-8 lg:p-[50px] gap-8 md:gap-10 lg:gap-16 xl:gap-24 rounded-[20px] bg-[#222222] md:min-h-screen overflow-hidden">
       {/* Left: Text Content */}
       <div className="flex flex-col items-start gap-2.5 flex-1 max-w-[692px]">
         <div className="flex items-center gap-2.5">
