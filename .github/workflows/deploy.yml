@@ -24,9 +24,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Add cache bust
+        run: echo "/* Cache-Control: no-cache" > dist/_headers
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-
