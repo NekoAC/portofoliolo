@@ -35,7 +35,7 @@ const Projects = () => {
             Project & Use Case
           </h1>
           <p className="font-satoshi text-sm md:text-lg text-muted-foreground max-w-[600px] mt-4">
-            AGENZ helps ambitious teams design, launch, and scale digital experiences by combining strategy, UX, and automation into one growth ready system.
+            A curated selection of my work. There's more in the archive, but these are the projects with proper documentation worth sharing.
           </p>
         </ScrollReveal>
 
