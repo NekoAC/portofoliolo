@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import CommunitySection from "@/components/CommunitySection";
 import Marquee, { type MarqueeItemData } from "@/components/Marquee";
+import ProjectCard from "@/components/ProjectCard";
 import { SmileySticker, Hammer, RocketLaunch, FastForward, CassetteTape, Coffee } from "@phosphor-icons/react";
 import { projects } from "@/data/projects";
 
