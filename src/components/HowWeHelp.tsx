@@ -62,7 +62,7 @@ const HowWeHelp = () => {
 
           {/* Navigation - hidden while only one project exists */}
           {projects.length > 1 && (
-            <div className="flex items-center justify-center gap-4 mt-6">
+            <div className="flex md:hidden items-center justify-center gap-4 mt-6">
               <button
                 onClick={() => scrollToIndex(currentIndex - 1)}
                 disabled={currentIndex === 0}
