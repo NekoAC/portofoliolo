@@ -54,18 +54,18 @@ const HowWeHelp = () => {
               <Link
                 to={`/projects/${project.slug}`}
                 key={project.slug}
-                className="help-card flex flex-col items-start p-2.5 gap-2.5 min-w-[280px] md:min-w-[340px] lg:min-w-[420px] lg:max-w-[420px] flex-shrink-0 rounded-[10px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] snap-start group transition-transform hover:scale-[1.02]"
+                className="help-card flex flex-col items-start p-2 md:p-2.5 gap-2 md:gap-2.5 w-[220px] min-w-[220px] md:w-auto md:min-w-[340px] lg:min-w-[420px] lg:max-w-[420px] flex-shrink-0 rounded-[10px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] snap-start group transition-transform hover:scale-[1.02]"
                 style={{
                   background: "linear-gradient(0deg, #404040, #404040), linear-gradient(180deg, rgba(46, 46, 46, 0) 0%, #000000 100%)",
                 }}
               >
-                <div className="w-full aspect-[411/500] rounded-lg overflow-hidden">
+                <div className="w-full aspect-[4/5] md:aspect-[411/500] rounded-lg overflow-hidden">
                   <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
-                <h3 className="font-satoshi font-bold text-lg md:text-xl leading-[27px] text-foreground">
+                <h3 className="font-satoshi font-bold text-base md:text-xl leading-snug md:leading-[27px] text-foreground">
                   {project.title}
                 </h3>
-                <p className="font-satoshi text-sm md:text-base leading-[22px] text-foreground/80 line-clamp-3">
+                <p className="font-satoshi text-xs md:text-base leading-[18px] md:leading-[22px] text-foreground/80 line-clamp-3">
                   {project.description}
                 </p>
               </Link>
