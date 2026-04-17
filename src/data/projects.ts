@@ -250,8 +250,8 @@ export const projects: ProjectData[] = [
     image: "/images/e84efcbf-9128-44ba-8b54-4e51e221a1e6.png",
     tools: ["Crypto Wallet", "Mobile", "Web3", "Concept Work", "Product Design"],
     heroTitle: "MOST CRYPTO WALLETS ARE BUILT FOR PEOPLE WHO ALREADY UNDERSTAND CRYPTO. MASWALLET COULDN'T BE.",
-    role: "Solo Product Designer · Concept · System Architecture · Web & Mobile UI",
-    services: "Solo Product Designer",
+    role: "UI / UX DESIGN · Concept · System Architecture · Web & Mobile UI",
+    services: "UI / UX DESIGN",
     timeline: "2024 · Concept / Pre-engineering",
     overview:
       "MasChain's ecosystem products MyKapital, BlockchainCert, E-Wakalah all touch the blockchain. A native wallet was the missing infrastructure piece that would connect a user's activity across the entire platform.\n\nThe problem: MasChain's users are not crypto-native. They are SME owners, graduates, professionals people who interact with blockchain-backed products without necessarily knowing or caring about the underlying technology.\n\nA wallet designed like MetaMask or Trust Wallet would fail this audience immediately. The design brief was essentially: build a wallet that feels as familiar as a banking app, while being capable of everything a blockchain wallet needs to do.\n\n\n\n\n",
