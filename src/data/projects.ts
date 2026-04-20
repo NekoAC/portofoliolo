@@ -58,7 +58,7 @@ export const projects: ProjectData[] = [
     title: "MyKapital",
     category: "Project & Case",
     description:
-      "Built from zero with no existing guidelines — brand, design system, landing page, and full dashboard UI for a live blockchain-backed SME financing platform serving investors and business owners.",
+      "Built from zero with no existing guidelines. Brand, design system, landing page, and full dashboard UI for a live blockchain-backed SME financing platform serving investors and business owners.",
     image: mykapitalImg,
     heroImage: mykapitalHeroImg,
     tools: ["Brand Identity", "Design System", "Zero-Code Solution", "Frontend (Webflow)"],
