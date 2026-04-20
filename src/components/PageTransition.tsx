@@ -199,17 +199,21 @@ const PageTransition = ({ children }: PageTransitionProps) => {
 
         <span
           ref={taglineRef}
-          className="font-satoshi font-medium text-primary-foreground/90 mt-4 md:mt-6 block overflow-hidden text-left self-start"
+          className="font-satoshi font-medium text-primary-foreground/90 mt-4 md:mt-6 block text-left self-start leading-[1.3]"
           style={{ fontSize: "clamp(14px, 1.6vw, 24px)" }}
         >
           {taglineWords.map((w, i) => (
             <span
               key={`${w}-${i}`}
-              className="slam-tagline-word inline-block align-top"
-              style={{ willChange: "transform, opacity" }}
+              className="inline-block overflow-hidden align-bottom"
             >
-              {w}
-              {i < taglineWords.length - 1 ? "\u00A0" : ""}
+              <span
+                className="slam-tagline-word inline-block align-baseline"
+                style={{ willChange: "transform, opacity" }}
+              >
+                {w}
+                {i < taglineWords.length - 1 ? "\u00A0" : ""}
+              </span>
             </span>
           ))}
         </span>
