@@ -8,21 +8,20 @@ interface PageTransitionProps {
 
 // Personality-driven copy per route
 const ROUTE_STORY: Record<string, { word: string; tagline: string }> = {
-  "/": { word: "HOME.", tagline: "Welcome back — let's start from the top →" },
-  "/services": { word: "SERVICES.", tagline: "Let's talk about what I do →" },
-  "/projects": { word: "PROJECTS.", tagline: "A peek at what I've shipped →" },
-  "/about": { word: "ABOUT.", tagline: "The story behind the pixels →" },
-  "/contact": { word: "CONTACT.", tagline: "Let's build something together →" },
+  "/": { word: "HOME.", tagline: "Welcome back — let's start from the top" },
+  "/services": { word: "SERVICES.", tagline: "Let's talk about what I do" },
+  "/projects": { word: "PROJECTS.", tagline: "A peek at what I've shipped" },
+  "/about": { word: "ABOUT.", tagline: "The story behind the pixels" },
+  "/contact": { word: "CONTACT.", tagline: "Let's build something together" },
 };
 
 const getStory = (pathname: string) => {
   if (ROUTE_STORY[pathname]) return ROUTE_STORY[pathname];
-  // Fallback for case study / dynamic routes
   if (pathname.startsWith("/projects/")) {
-    return { word: "CASE STUDY.", tagline: "Stepping into the work →" };
+    return { word: "CASE STUDY.", tagline: "Stepping into the work" };
   }
   const slug = pathname.replace(/^\//, "").split("/")[0] || "page";
-  return { word: `${slug.toUpperCase()}.`, tagline: "Hold tight — taking you there →" };
+  return { word: `${slug.toUpperCase()}.`, tagline: "Hold tight — taking you there" };
 };
 
 const PageTransition = ({ children }: PageTransitionProps) => {
