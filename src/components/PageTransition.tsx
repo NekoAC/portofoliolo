@@ -170,7 +170,7 @@ const PageTransition = ({ children }: PageTransitionProps) => {
       {/* Word Slam overlay */}
       <div
         ref={slamRef}
-        className="fixed inset-0 z-[120] pointer-events-none flex flex-col justify-center items-start overflow-hidden px-6 md:px-12 lg:px-20"
+        className="fixed inset-0 z-[120] pointer-events-none flex flex-col justify-center items-start overflow-hidden pl-6 md:pl-12 lg:pl-20 pr-6"
         style={{ display: "none", background: "hsl(var(--primary))", perspective: "1200px" }}
         aria-hidden="true"
       >
@@ -199,16 +199,17 @@ const PageTransition = ({ children }: PageTransitionProps) => {
 
         <span
           ref={taglineRef}
-          className="font-satoshi font-medium text-primary-foreground/90 mt-4 md:mt-6 flex flex-wrap overflow-hidden"
+          className="font-satoshi font-medium text-primary-foreground/90 mt-4 md:mt-6 block overflow-hidden text-left self-start"
           style={{ fontSize: "clamp(14px, 1.6vw, 24px)" }}
         >
           {taglineWords.map((w, i) => (
             <span
               key={`${w}-${i}`}
-              className="slam-tagline-word inline-block mr-[0.3em]"
+              className="slam-tagline-word inline-block align-top"
               style={{ willChange: "transform, opacity" }}
             >
               {w}
+              {i < taglineWords.length - 1 ? "\u00A0" : ""}
             </span>
           ))}
         </span>
