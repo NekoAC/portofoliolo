@@ -84,11 +84,11 @@ const ZeroCodeSection = () => {
                     {card.description}
                   </p>
                 </div>
-                <div className="mt-auto p-6 md:px-[37px] md:pb-[40px] flex items-stretch">
-                  <AnimatedButton variant="accent" magnetic={false} onClick={() => navigate("/contact")} className="h-[50px] md:h-[65px] text-base md:text-[20px] leading-[27px] !rounded-r-none">
+                <div className="mt-auto p-6 md:px-[37px] md:pb-[40px] inline-flex items-stretch">
+                  <AnimatedButton variant="accent" onClick={() => navigate("/contact")} className="h-[50px] md:h-[65px] text-base md:text-[20px] leading-[27px]">
                     Let's Start Building
                   </AnimatedButton>
-                  <AnimatedButton variant="accent" iconOnly magnetic={false} onClick={() => navigate("/contact")} className="w-[50px] h-[50px] md:w-[64px] md:h-[65px] !rounded-l-none border-l border-accent-foreground/20">
+                  <AnimatedButton variant="accent" iconOnly onClick={() => navigate("/contact")} className="w-[50px] h-[50px] md:w-[64px] md:h-[65px]">
                     <ArrowRight className="h-5 w-5 md:h-6 md:w-6" />
                   </AnimatedButton>
                 </div>
