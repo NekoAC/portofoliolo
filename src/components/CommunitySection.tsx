@@ -96,19 +96,17 @@ const CommunitySection = () => {
         </p>
 
         {/* CTA */}
-        <div className="flex flex-wrap items-stretch gap-3 mt-4">
-          <div className="flex items-stretch">
-            <Link to="/about">
-              <AnimatedButton variant="primary" magnetic shine fillSweep className="px-5 h-[50px] md:h-[55px] text-base md:text-lg rounded-[10px]">
-                Start A Project With Me
-              </AnimatedButton>
-            </Link>
-            <AnimatedButton variant="primary" iconOnly magnetic className="w-[50px] h-[50px] md:w-[55px] md:h-[55px] rounded-[10px]">
-              <PaperPlaneTilt size={20} weight="fill" />
+        <div className="flex flex-wrap items-stretch mt-4 gap-0">
+          <Link to="/about" className="flex items-stretch">
+            <AnimatedButton variant="primary" magnetic shine fillSweep className="h-[50px] md:h-[55px] text-sm md:text-lg">
+              Start A Project With Me
             </AnimatedButton>
-          </div>
-          <Link to="/projects">
-            <AnimatedButton variant="accent" magnetic shine fillSweep className="px-5 h-[50px] md:h-[55px] text-base md:text-lg rounded-[10px]">
+          </Link>
+          <AnimatedButton variant="primary" iconOnly magnetic className="w-[50px] h-[50px] md:w-[55px] md:h-[55px]">
+            <PaperPlaneTilt size={20} weight="fill" />
+          </AnimatedButton>
+          <Link to="/projects" className="flex items-stretch">
+            <AnimatedButton variant="accent" magnetic shine fillSweep className="h-[50px] md:h-[55px] text-sm md:text-lg">
               View My Work
             </AnimatedButton>
           </Link>
