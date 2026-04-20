@@ -58,7 +58,7 @@ export const projects: ProjectData[] = [
     title: "MyKapital",
     category: "Project & Case",
     description:
-      "Built from zero with no existing guidelines — brand, design system, landing page, and full dashboard UI for a live blockchain-backed SME financing platform serving investors and business owners.",
+      "Built from zero with no existing guidelines. Brand, design system, landing page, and full dashboard UI for a live blockchain-backed SME financing platform serving investors and business owners.",
     image: mykapitalImg,
     heroImage: mykapitalHeroImg,
     tools: ["Brand Identity", "Design System", "Zero-Code Solution", "Frontend (Webflow)"],
@@ -246,7 +246,7 @@ export const projects: ProjectData[] = [
     title: "MasWallet",
     category: "Crypto Wallet · Mobile · Web3 · Concept Work · Product Design",
     description:
-      "A concept-to-handoff product design for MasChain's native cryptocurrency wallet — web and mobile — built ahead of engineering engagement to establish product vision, user flows, and interface direction.",
+      "A concept-to-handoff product design for MasChain's native cryptocurrency wallet, across web and mobile, built ahead of engineering engagement to establish product vision, user flows, and interface direction.",
     image: "/images/e84efcbf-9128-44ba-8b54-4e51e221a1e6.png",
     tools: ["Crypto Wallet", "Mobile", "Web3", "Concept Work", "Product Design"],
     heroTitle: "MOST CRYPTO WALLETS ARE BUILT FOR PEOPLE WHO ALREADY UNDERSTAND CRYPTO. MASWALLET COULDN'T BE.",
