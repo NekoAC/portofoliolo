@@ -183,13 +183,13 @@ const PageTransition = ({ children }: PageTransitionProps) => {
 
         <span
           ref={wordRef}
-          className="font-chillax font-bold text-primary-foreground leading-[0.85] tracking-tight whitespace-nowrap flex"
+          className="font-chillax font-bold text-primary-foreground leading-[0.85] tracking-tight whitespace-nowrap block"
           style={{ fontSize: "clamp(72px, 18vw, 280px)" }}
         >
           {wordLetters.map((char, i) => (
             <span
               key={`${char}-${i}`}
-              className="slam-letter inline-block"
+              className="slam-letter inline-block align-top"
               style={{ willChange: "transform, opacity" }}
             >
               {char === " " ? "\u00A0" : char}
