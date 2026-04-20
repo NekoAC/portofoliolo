@@ -34,33 +34,22 @@ const Footer = () => {
       <div className="bg-primary rounded-[10px] md:rounded-[20px] p-3 md:p-5 pt-[60px] md:pt-[80px] flex flex-col items-center gap-2.5">
         {/* Scrolling banner */}
         <div className="w-full overflow-hidden mb-4">
-          <div className="flex items-center gap-[13px] animate-marquee whitespace-nowrap">
-            {[0, 1].map((i) =>
-            <div key={i} className="flex items-center gap-[13px] shrink-0">
-                <span className="font-satoshi text-2xl md:text-[48px] leading-[36px] md:leading-[65px] text-primary-foreground font-light">
+          <div className="flex items-center animate-marquee whitespace-nowrap">
+            {[0, 1].map((i) => (
+              <div key={i} className="flex items-center shrink-0">
+                <span className="font-satoshi text-2xl md:text-[48px] leading-[36px] md:leading-[65px] text-primary-foreground font-light pr-[26px]">
                   Design better. <span className="font-black">Build</span> smarter. <span className="font-black">Scale</span> faster.
                 </span>
-                <div className="flex items-start gap-0">
-                  <AnimatedButton variant="inverse" onClick={() => navigate("/contact")} className="px-5 py-5 text-xl leading-[27px]">
+                <div className="flex items-center gap-0 pr-[26px]">
+                  <AnimatedButton variant="inverse" onClick={() => navigate("/contact")} className="px-5 h-[55px] text-xl leading-[27px]">
                     Let's Get Started
                   </AnimatedButton>
-                  <AnimatedButton variant="inverse" iconOnly onClick={() => navigate("/contact")} className="p-5">
-                    <CalendarBlank size={24} weight="fill" />
-                  </AnimatedButton>
-                </div>
-                <span className="font-satoshi text-2xl md:text-[48px] leading-[36px] md:leading-[65px] text-primary-foreground font-light">
-                  Design better. <span className="font-black">Build</span> smarter. <span className="font-black">Scale</span> faster.
-                </span>
-                <div className="flex items-start gap-0">
-                  <AnimatedButton variant="inverse" onClick={() => navigate("/contact")} className="px-5 py-5 text-xl leading-[27px]">
-                    Let's Get Started
-                  </AnimatedButton>
-                  <AnimatedButton variant="inverse" iconOnly onClick={() => navigate("/contact")} className="p-5">
+                  <AnimatedButton variant="inverse" iconOnly onClick={() => navigate("/contact")} className="w-[55px] h-[55px]">
                     <CalendarBlank size={24} weight="fill" />
                   </AnimatedButton>
                 </div>
               </div>
-            )}
+            ))}
           </div>
         </div>
 
