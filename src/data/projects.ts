@@ -246,7 +246,7 @@ export const projects: ProjectData[] = [
     title: "MasWallet",
     category: "Crypto Wallet · Mobile · Web3 · Concept Work · Product Design",
     description:
-      "A concept-to-handoff product design for MasChain's native cryptocurrency wallet — web and mobile — built ahead of engineering engagement to establish product vision, user flows, and interface direction.",
+      "A concept-to-handoff product design for MasChain's native cryptocurrency wallet, across web and mobile, built ahead of engineering engagement to establish product vision, user flows, and interface direction.",
     image: "/images/e84efcbf-9128-44ba-8b54-4e51e221a1e6.png",
     tools: ["Crypto Wallet", "Mobile", "Web3", "Concept Work", "Product Design"],
     heroTitle: "MOST CRYPTO WALLETS ARE BUILT FOR PEOPLE WHO ALREADY UNDERSTAND CRYPTO. MASWALLET COULDN'T BE.",
