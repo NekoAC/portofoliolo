@@ -184,7 +184,7 @@ const PageTransition = ({ children }: PageTransitionProps) => {
         <span
           ref={wordRef}
           className="font-chillax font-bold text-primary-foreground leading-[0.85] tracking-tight whitespace-nowrap block"
-          style={{ fontSize: "clamp(72px, 18vw, 280px)" }}
+          style={{ fontSize: "clamp(72px, 18vw, 280px)", marginLeft: "-0.06em" }}
         >
           {wordLetters.map((char, i) => (
             <span
