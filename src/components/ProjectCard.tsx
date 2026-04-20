@@ -104,7 +104,7 @@ const ProjectCard = ({
             style={{ background: "rgba(51, 51, 51, 0.8)" }}
           >
             <span className="font-satoshi font-bold text-sm leading-[19px] text-white">
-              Used Tools
+              Skills & Tools
             </span>
             <div className="flex flex-row flex-wrap gap-0.5">
               {project.tools.map((tool, toolIndex) => (

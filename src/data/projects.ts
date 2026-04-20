@@ -61,7 +61,7 @@ export const projects: ProjectData[] = [
       "Built from zero with no existing guidelines. Brand, design system, landing page, and full dashboard UI for a live blockchain-backed SME financing platform serving investors and business owners.",
     image: mykapitalImg,
     heroImage: mykapitalHeroImg,
-    tools: ["Brand Identity", "Design System", "Zero-Code Solution", "Frontend (Webflow)"],
+    tools: ["Brand Identity", "Design System", "UI/UX Design", "Competitive Research", "Webflow", "Figma", "Canva", "Zero-Code Solution", "Frontend (Webflow)"],
     heroTitle: "Making Blockchain-Backed Financing Feel Human",
     role: "UI / UX Development",
     timeline: "3 Months",
@@ -167,7 +167,7 @@ export const projects: ProjectData[] = [
     description:
       "A ground-up redesign of a blockchain credential platform turning a system that required internal team intervention for 4 in 5 users into one that anyone can use independently.",
     image: "/images/3a963058-aa49-45d8-af88-49c0e221eafe.png",
-    tools: ["Figma", "Design System", "UX Research", "Multi-role Flows"],
+    tools: ["UI/UX Design", "Design System", "User Flow Mapping", "Heuristic Evaluation", "Figma", "FigJam", "Canva"],
     heroTitle: "When 80% of users can't self-serve, the design is the problem.",
     role: "UI / UX Designer , Web-Developer (Zero-Code)",
     services: "UI/UX Designer",
@@ -248,7 +248,7 @@ export const projects: ProjectData[] = [
     description:
       "A concept-to-handoff product design for MasChain's native cryptocurrency wallet, across web and mobile, built ahead of engineering engagement to establish product vision, user flows, and interface direction.",
     image: "/images/e84efcbf-9128-44ba-8b54-4e51e221a1e6.png",
-    tools: ["Crypto Wallet", "Mobile", "Web3", "Concept Work", "Product Design"],
+    tools: ["UI/UX Design", "Design System", "Mobile UI", "Web UI", "Prototyping", "Figma", "FigJam"],
     heroTitle: "MOST CRYPTO WALLETS ARE BUILT FOR PEOPLE WHO ALREADY UNDERSTAND CRYPTO. MASWALLET COULDN'T BE.",
     role: "UI / UX DESIGN · Concept · System Architecture · Web & Mobile UI",
     services: "UI / UX DESIGN",
