@@ -80,8 +80,14 @@ const PageTransition = ({ children }: PageTransitionProps) => {
         clipPath: "inset(0% 100% 0% 0%)",
       })
       .set(accent, { scaleY: 0, transformOrigin: "top center" })
-      .set(letters, { yPercent: 110, opacity: 0, rotateX: -55, transformOrigin: "50% 100%" })
-      .set(taglineWordEls, { yPercent: 100, opacity: 0 })
+      .set(letters, {
+        y: 0,
+        yPercent: 110,
+        opacity: 0,
+        rotateX: -55,
+        transformOrigin: "50% 100%",
+      })
+      .set(taglineWordEls, { y: 0, yPercent: 100, opacity: 0 })
       .set(oldPage, { scale: 1, filter: "brightness(1) blur(0px)" })
       .set(newPage, { opacity: 0, scale: 1.04, filter: "blur(8px)" })
 
