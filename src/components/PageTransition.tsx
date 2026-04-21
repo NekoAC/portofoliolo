@@ -18,7 +18,7 @@ const ROUTE_STORY: Record<string, { word: string; tagline: string }> = {
 const getStory = (pathname: string) => {
   if (ROUTE_STORY[pathname]) return ROUTE_STORY[pathname];
   if (pathname.startsWith("/projects/")) {
-    return { word: "CASE STUDY.", tagline: "Stepping into the work" };
+    return { word: "CASE.", tagline: "Stepping into the work" };
   }
   const slug = pathname.replace(/^\//, "").split("/")[0] || "page";
   return { word: `${slug.toUpperCase()}.`, tagline: "Hold tight — taking you there" };
