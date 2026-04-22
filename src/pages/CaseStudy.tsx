@@ -14,6 +14,8 @@ import Marquee, { type MarqueeItemData } from "@/components/Marquee";
 import mykapitalInvestor1 from "@/assets/projects/mykapital-investor-1.png";
 import mykapitalInvestor2 from "@/assets/projects/mykapital-investor-2.png";
 import mykapitalIssuer from "@/assets/projects/mykapital-issuer.png";
+import maswalletSide1 from "@/assets/projects/maswallet-side1.png";
+import maswalletSide2 from "@/assets/projects/maswallet-side2.png";
 import webflowLogo from "@/assets/logos/webflow.svg";
 import framerLogo from "@/assets/logos/framer.svg";
 import notionLogo from "@/assets/logos/notion.svg";
@@ -328,14 +330,23 @@ const CaseStudy = () => {
 
         {/* Side by Side Images */}
         <ScrollReveal variant="fade-up">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
-            <div className="rounded-[10px] overflow-hidden">
-              <img src={project.slug === "blockchaincert" ? "/images/blockchaincert-side1.png" : mykapitalInvestor1} alt={`${project.title} View 1`} className="w-full h-full object-cover" />
-            </div>
-            <div className="rounded-[10px] overflow-hidden">
-              <img src={project.slug === "blockchaincert" ? "/images/blockchaincert-side2.png" : mykapitalInvestor2} alt={`${project.title} View 2`} className="w-full h-full object-cover" />
-            </div>
-          </div>
+          {(() => {
+            const sideImages: Record<string, [string, string]> = {
+              blockchaincert: ["/images/blockchaincert-side1.png", "/images/blockchaincert-side2.png"],
+              maswallet: [maswalletSide1, maswalletSide2],
+            };
+            const [side1, side2] = sideImages[project.slug] ?? [mykapitalInvestor1, mykapitalInvestor2];
+            return (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
+                <div className="rounded-[10px] overflow-hidden">
+                  <img src={side1} alt={`${project.title} View 1`} className="w-full h-full object-cover" />
+                </div>
+                <div className="rounded-[10px] overflow-hidden">
+                  <img src={side2} alt={`${project.title} View 2`} className="w-full h-full object-cover" />
+                </div>
+              </div>
+            );
+          })()}
         </ScrollReveal>
 
         {/* Research Objectives */}
