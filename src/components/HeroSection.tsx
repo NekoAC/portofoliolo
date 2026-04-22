@@ -95,7 +95,7 @@ const HeroSection = () => {
             <AnimatedButton variant="primary" iconOnly onClick={() => navigate("/contact")} className="w-[50px] h-[50px] md:w-[64px] md:h-[65px]">
               <Hammer size={24} weight="fill" className="md:w-8 md:h-8" />
             </AnimatedButton>
-            <AnimatedButton variant="accent" onClick={() => navigate("/contact")} className="h-[50px] md:h-[65px] text-sm md:text-[20px] leading-[27px]">
+            <AnimatedButton variant="accent" onClick={() => navigate("/projects")} className="h-[50px] md:h-[65px] text-sm md:text-[20px] leading-[27px]">
               View My Work
             </AnimatedButton>
           </div>
