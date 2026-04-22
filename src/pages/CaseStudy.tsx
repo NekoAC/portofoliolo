@@ -297,17 +297,16 @@ const CaseStudy = () => {
                     >
                       {cta.label}
                     </AnimatedButton>
-                    {!isComingSoon && (
-                      <AnimatedButton
-                        variant="primary"
-                        iconOnly
-                        magnetic
-                        onClick={handleClick}
-                        className="w-16 h-[65px] rounded-[10px]"
-                      >
-                        <ArrowRight size={24} weight="bold" />
-                      </AnimatedButton>
-                    )}
+                    <AnimatedButton
+                      variant="primary"
+                      iconOnly
+                      magnetic
+                      onClick={handleClick}
+                      disabled={isComingSoon}
+                      className={`w-16 h-[65px] rounded-[10px] ${isComingSoon ? "cursor-not-allowed opacity-80" : ""}`}
+                    >
+                      <ArrowRight size={24} weight="bold" />
+                    </AnimatedButton>
                   </div>
                 );
               })()}
