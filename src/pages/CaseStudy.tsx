@@ -14,6 +14,8 @@ import Marquee, { type MarqueeItemData } from "@/components/Marquee";
 import mykapitalInvestor1 from "@/assets/projects/mykapital-investor-1.png";
 import mykapitalInvestor2 from "@/assets/projects/mykapital-investor-2.png";
 import mykapitalIssuer from "@/assets/projects/mykapital-issuer.png";
+import maswalletSide1 from "@/assets/projects/maswallet-side1.png";
+import maswalletSide2 from "@/assets/projects/maswallet-side2.png";
 import webflowLogo from "@/assets/logos/webflow.svg";
 import framerLogo from "@/assets/logos/framer.svg";
 import notionLogo from "@/assets/logos/notion.svg";
