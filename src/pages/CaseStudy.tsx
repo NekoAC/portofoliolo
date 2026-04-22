@@ -273,14 +273,44 @@ const CaseStudy = () => {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex items-start gap-0">
-                <AnimatedButton variant="primary" magnetic shine fillSweep className="px-5 h-[65px] text-xl rounded-[10px]">
-                  Live Site
-                </AnimatedButton>
-                <AnimatedButton variant="primary" iconOnly magnetic className="w-16 h-[65px] rounded-[10px]">
-                  <ArrowRight size={24} weight="bold" />
-                </AnimatedButton>
-              </div>
+              {(() => {
+                const liveLinks: Record<string, { label: string; url: string }> = {
+                  mykapital: { label: "Live Site", url: "https://mykapital.my" },
+                  blockchaincert: { label: "Live Site", url: "https://blockchaincert.my" },
+                  maswallet: { label: "Coming Soon", url: "" },
+                };
+                const cta = liveLinks[project.slug] ?? { label: "Live Site", url: "" };
+                const isComingSoon = !cta.url;
+                const handleClick = () => {
+                  if (!isComingSoon) window.open(cta.url, "_blank", "noopener,noreferrer");
+                };
+                return (
+                  <div className="flex items-start gap-0">
+                    <AnimatedButton
+                      variant="primary"
+                      magnetic
+                      shine
+                      fillSweep
+                      onClick={handleClick}
+                      disabled={isComingSoon}
+                      className={`px-5 h-[65px] text-xl rounded-[10px] ${isComingSoon ? "cursor-not-allowed opacity-80" : ""}`}
+                    >
+                      {cta.label}
+                    </AnimatedButton>
+                    {!isComingSoon && (
+                      <AnimatedButton
+                        variant="primary"
+                        iconOnly
+                        magnetic
+                        onClick={handleClick}
+                        className="w-16 h-[65px] rounded-[10px]"
+                      >
+                        <ArrowRight size={24} weight="bold" />
+                      </AnimatedButton>
+                    )}
+                  </div>
+                );
+              })()}
             </div>
 
             {/* Right: Content */}
