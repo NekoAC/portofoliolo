@@ -83,8 +83,8 @@ const CommunitySection = () => {
       {/* Left: Text Content */}
       <div className="flex flex-col items-start gap-2.5 flex-1 max-w-[692px]">
         <div className="flex items-center gap-2.5">
-          <SmileySticker size={20} weight="fill" className="text-primary" />
-          <span className="font-satoshi text-sm md:text-base text-white">Meet Zairie</span>
+          <SmileySticker size={30} weight="fill" className="text-primary" />
+          <span className="font-satoshi text-base md:text-[20px] leading-[27px] font-normal text-white">Meet Zairie</span>
         </div>
 
         <h2 className="font-satoshi font-medium text-2xl md:text-4xl lg:text-[48px] lg:leading-[50px] text-white">
