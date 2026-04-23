@@ -588,10 +588,10 @@ const CaseStudy = () => {
                   </span>
                 </div>
                 <h2 className="font-satoshi font-medium text-[60px] leading-[60px] text-white">
-                  Tools We Used
+                  Tools I've Used
                 </h2>
                 <p className="font-satoshi text-xl text-white leading-[27px]">
-                  We tried and used a lot of tools (Like a lot), and we love sharing them with you.
+                  I've tried and used a lot of tools (Like a lot), and I love sharing them with you.
                 </p>
                 <TooltipProvider>
                   <div className="flex items-start mt-4">
