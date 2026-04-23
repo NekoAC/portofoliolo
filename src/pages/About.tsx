@@ -371,10 +371,10 @@ const About = () => {
                   </span>
                 </div>
                 <h2 className="font-satoshi font-medium text-[36px] leading-[40px] md:text-5xl md:leading-[52px] lg:text-[60px] lg:leading-[60px] text-white">
-                  Tools We Used
+                  Tools I've Used
                 </h2>
                 <p className="font-satoshi text-sm md:text-base lg:text-xl text-white leading-[22px] md:leading-[27px]">
-                  We tried and used a lot of tools (Like a lot), and we love sharing them with you.
+                  I've tried and used a lot of tools (Like a lot), and I love sharing them with you.
                 </p>
                 <TooltipProvider>
                   <div className="flex items-stretch mt-4">
