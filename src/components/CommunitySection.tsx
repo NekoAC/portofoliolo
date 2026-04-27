@@ -3,13 +3,14 @@ import AnimatedButton from "@/components/AnimatedButton";
 import communityBg from "@/assets/community-bg.png";
 import zairieAvatar from "@/assets/zairie-avatar.png";
 import { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 
 const CommunitySection = () => {
   const clusterRef = useRef<HTMLDivElement>(null);
   const imgRef = useRef<HTMLDivElement>(null);
   const iconsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const cluster = clusterRef.current;
@@ -97,19 +98,15 @@ const CommunitySection = () => {
 
         {/* CTA */}
         <div className="flex flex-wrap items-stretch mt-4 gap-0">
-          <Link to="/about" className="flex items-stretch">
-            <AnimatedButton variant="primary" magnetic shine fillSweep className="h-[50px] md:h-[55px] text-sm md:text-lg">
-              Start A Project With Me
-            </AnimatedButton>
-          </Link>
-          <AnimatedButton variant="primary" iconOnly magnetic className="w-[50px] h-[50px] md:w-[55px] md:h-[55px]">
+          <AnimatedButton variant="primary" magnetic shine fillSweep onClick={() => navigate("/about")} className="h-[50px] md:h-[55px] text-sm md:text-lg">
+            Start A Project With Me
+          </AnimatedButton>
+          <AnimatedButton variant="primary" iconOnly magnetic onClick={() => navigate("/about")} className="w-[50px] h-[50px] md:w-[55px] md:h-[55px]">
             <PaperPlaneTilt size={20} weight="fill" />
           </AnimatedButton>
-          <Link to="/projects" className="flex items-stretch">
-            <AnimatedButton variant="accent" magnetic shine fillSweep className="h-[50px] md:h-[55px] text-sm md:text-lg">
-              View My Work
-            </AnimatedButton>
-          </Link>
+          <AnimatedButton variant="accent" magnetic shine fillSweep onClick={() => navigate("/projects")} className="h-[50px] md:h-[55px] text-sm md:text-lg">
+            View My Work
+          </AnimatedButton>
         </div>
       </div>
 
