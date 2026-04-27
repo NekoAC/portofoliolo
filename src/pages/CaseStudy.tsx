@@ -6,6 +6,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import CommunitySection from "@/components/CommunitySection";
 import AnimatedButton from "@/components/AnimatedButton";
 import { projects } from "@/data/projects";
+import ProjectCard from "@/components/ProjectCard";
 import { ArrowLeft, ArrowRight, Briefcase, CaretLeft, CaretRight, Hammer, RocketLaunch, SmileySticker } from "@phosphor-icons/react";
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from "@/components/ui/tooltip";
 import personaSme from "@/assets/projects/persona-sme.png";
