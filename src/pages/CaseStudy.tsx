@@ -719,6 +719,37 @@ const CaseStudy = () => {
         </ScrollReveal>
 
         {/* Community */}
+        {/* View Other Project Cases */}
+        {(() => {
+          const others = projects.filter((p) => p.slug !== project.slug);
+          if (others.length === 0) return null;
+          return (
+            <ScrollReveal variant="fade-up">
+              <section className="mb-20">
+                <div className="flex flex-col items-start gap-2.5 mb-8">
+                  <div className="flex items-center gap-2.5">
+                    <Briefcase size={28} weight="fill" className="text-primary" />
+                    <span className="font-satoshi text-base md:text-xl text-[#1E1E1E]">
+                      More Work
+                    </span>
+                  </div>
+                  <h2 className="font-satoshi font-medium text-3xl md:text-5xl lg:text-[60px] lg:leading-[60px] text-[#1E1E1E]">
+                    View Other Project Cases
+                  </h2>
+                  <p className="font-satoshi text-sm md:text-base lg:text-xl leading-[22px] md:leading-[27px] text-[#1E1E1E]/70 max-w-3xl">
+                    Keep exploring — here are more case studies worth a look.
+                  </p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+                  {others.map((p) => (
+                    <ProjectCard key={p.slug} project={p} imageClassName="aspect-[4/5]" />
+                  ))}
+                </div>
+              </section>
+            </ScrollReveal>
+          );
+        })()}
+
         <ScrollReveal variant="fade-up">
           <CommunitySection />
         </ScrollReveal>
