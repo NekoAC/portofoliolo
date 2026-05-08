@@ -98,7 +98,7 @@ const ServicesSection = () => {
       {/* Feature Cards + CTA */}
       <div className="flex flex-col items-start gap-8 md:gap-[40px] w-full">
         {/* Cards - horizontal scroll on mobile, row on desktop */}
-        <div className="flex gap-4 md:gap-[40px] w-full overflow-x-auto pb-2 md:pb-0 snap-x snap-mandatory md:snap-none scrollbar-hide">
+        <div className="flex gap-4 w-full overflow-x-auto pb-2 md:pb-0 snap-x snap-mandatory md:snap-none scrollbar-hide md:gap-[10px]">
           {services.map((service) => (
             <div
               key={service.title}
