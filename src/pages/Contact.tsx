@@ -2,6 +2,7 @@ import { SmileySticker, PaperPlaneTilt, Cursor, Flower, Star, Lightning, Heart, 
 import AnimatedButton from "@/components/AnimatedButton";
 import communityBg from "@/assets/community-bg.png";
 import zairieAvatar from "@/assets/zairie-avatar.png";
+import zairieContactAvatar from "@/assets/zairie-contact-avatar.png";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Navbar from "@/components/Navbar";
@@ -110,7 +111,7 @@ const Contact = () => {
             <ScrollReveal delay={0.4}>
               <div className="flex items-center gap-3 mt-2">
                 <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">
-                  <SmileySticker size={20} weight="fill" className="text-muted-foreground" />
+                  <img src={zairieContactAvatar} alt="Zairie" className="w-full h-full rounded-full object-cover" />
                 </div>
                 <div>
                   <p className="font-satoshi font-bold text-sm md:text-base text-foreground">Mohammad Izz Qhuzairie</p>
