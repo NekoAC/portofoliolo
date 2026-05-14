@@ -102,8 +102,8 @@ const Contact = () => {
             </ScrollReveal>
 
             <ScrollReveal delay={0.3}>
-              <p className="font-satoshi text-sm md:text-base text-foreground/70">
-                Curious how Zero-code works, need a website, or just want to grab a coffee and chat? I'm always up for a good conversation.
+              <p className="font-satoshi text-sm md:text-base text-foreground/70 whitespace-pre-line">
+                Curious how Zero-code works, need a website, or{" "}{"\n"}just want to grab a coffee and chat? I'm always up for a good conversation.
               </p>
             </ScrollReveal>
 
