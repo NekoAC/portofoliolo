@@ -234,7 +234,7 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div
           ref={overlayRef}
-          className="fixed inset-0 z-[9998] flex flex-col items-center justify-center"
+          className="fixed inset-0 z-[9998] flex flex-col items-center justify-center overflow-hidden"
           style={{ background: "linear-gradient(180deg, #282828 0%, #000000 100%)" }}
         >
           {/* Close button */}
@@ -246,19 +246,19 @@ const Navbar = () => {
           </button>
 
           {/* Logo */}
-          <div className="mb-12">
-            <SmileyIcon size={60} />
+          <div className="mb-8">
+            <SmileyIcon size={50} />
           </div>
 
           {/* Links */}
-          <div ref={menuLinksRef} className="flex flex-col items-center gap-8">
+          <div ref={menuLinksRef} className="flex flex-col items-center gap-5">
             {navLinks.map((link) =>
               link.href.startsWith("/") ? (
                 <Link
                   key={link.href}
                   to={link.href}
                   onClick={closeMobileMenu}
-                  className="mobile-link font-satoshi font-medium text-3xl md:text-4xl text-foreground hover:text-primary transition-colors"
+                  className="mobile-link font-satoshi font-medium text-2xl md:text-4xl text-foreground hover:text-primary transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -267,14 +267,14 @@ const Navbar = () => {
                   key={link.href}
                   href={link.href}
                   onClick={closeMobileMenu}
-                  className="mobile-link font-satoshi font-medium text-3xl md:text-4xl text-foreground hover:text-primary transition-colors"
+                  className="mobile-link font-satoshi font-medium text-2xl md:text-4xl text-foreground hover:text-primary transition-colors"
                 >
                   {link.label}
                 </a>
               )
             )}
-            <Link to="/contact" className="mobile-link mt-4" onClick={closeMobileMenu}>
-              <AnimatedButton variant="primary" className="px-8 py-4 text-xl">
+            <Link to="/contact" className="mobile-link mt-2" onClick={closeMobileMenu}>
+              <AnimatedButton variant="primary" className="px-6 py-3 text-lg">
                 Let's Talk
               </AnimatedButton>
             </Link>
