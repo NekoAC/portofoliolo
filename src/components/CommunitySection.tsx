@@ -104,8 +104,15 @@ const CommunitySection = () => {
           <AnimatedButton variant="primary" iconOnly magnetic onClick={() => navigate("/about")} className="w-[50px] h-[50px] md:w-[55px] md:h-[55px]">
             <PaperPlaneTilt size={20} weight="fill" />
           </AnimatedButton>
-          <AnimatedButton variant="accent" magnetic shine fillSweep onClick={() => navigate("/projects")} className="h-[50px] md:h-[55px] text-sm md:text-lg">
-            View My Work
+          <AnimatedButton
+            variant="accent"
+            magnetic
+            shine
+            fillSweep
+            onClick={() => navigate("/projects")}
+            className="h-[50px] md:h-[55px] text-sm md:text-lg"
+          >
+            Project I worked On
           </AnimatedButton>
         </div>
       </div>

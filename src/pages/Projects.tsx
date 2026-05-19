@@ -29,10 +29,10 @@ const Projects = () => {
         <ScrollReveal variant="fade-up" className="flex flex-col items-center text-center mb-12">
           <div className="flex items-center gap-2 mb-4">
             <SuitcaseSimple size={24} weight="fill" className="text-primary" />
-            <span className="font-satoshi text-sm text-muted-foreground">Check Out Our Stuffffffss, Please</span>
+            <span className="font-satoshi text-sm text-muted-foreground">Check Out My Stuffs (I'm still updating it)</span>
           </div>
           <h1 className="font-satoshi font-bold text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-tight">
-            Project & Use Case
+            Projects & Use Cases
           </h1>
           <p className="font-satoshi text-sm md:text-lg text-muted-foreground max-w-[600px] mt-4">
             A curated selection of my work. There's more in the archive, but these are the projects with proper documentation worth sharing.
