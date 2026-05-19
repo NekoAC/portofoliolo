@@ -98,10 +98,10 @@ const CommunitySection = () => {
 
         {/* CTA */}
         <div className="flex flex-wrap items-stretch mt-4 gap-0">
-          <AnimatedButton variant="primary" magnetic shine fillSweep onClick={() => navigate("/about")} className="h-[50px] md:h-[55px] text-sm md:text-lg">
-            Start A Project With Me
+          <AnimatedButton variant="primary" magnetic shine fillSweep onClick={() => navigate("/projects")} className="h-[50px] md:h-[55px] text-sm md:text-lg">
+            See My Projects
           </AnimatedButton>
-          <AnimatedButton variant="primary" iconOnly magnetic onClick={() => navigate("/about")} className="w-[50px] h-[50px] md:w-[55px] md:h-[55px]">
+          <AnimatedButton variant="primary" iconOnly magnetic onClick={() => navigate("/projects")} className="w-[50px] h-[50px] md:w-[55px] md:h-[55px]">
             <PaperPlaneTilt size={20} weight="fill" />
           </AnimatedButton>
           <AnimatedButton
@@ -109,10 +109,10 @@ const CommunitySection = () => {
             magnetic
             shine
             fillSweep
-            onClick={() => navigate("/projects")}
+            onClick={() => navigate("/about")}
             className="h-[50px] md:h-[55px] text-sm md:text-lg"
           >
-            Project I worked On
+            More About Me
           </AnimatedButton>
         </div>
       </div>
